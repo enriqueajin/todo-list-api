@@ -14,4 +14,7 @@ app.get("/", (req, res) => {
 app.use('/api/v1/users', usersRouters);
 app.use('/api/v1/tasks', tasksRouters);
 
-app.listen(port, () => console.log(`app listening on port ${port}`));
+app.listen(port, err => {
+    if(err) throw err;
+    console.log('App listening on port 3000');
+});

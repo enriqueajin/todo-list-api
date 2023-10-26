@@ -88,3 +88,25 @@ SET
     phone_number = '5028970234',
     address = 'La Flora zona 19'
 WHERE user_id = '5LP22AfbfYWkgCC739Zsmgm9yti2';
+
+-- ADD TASK
+INSERT INTO tasks (user_id, status_id, title, description, due_date)
+VALUES ()
+
+-- UPDATE TASK
+UPDATE tasks
+SET
+    status_id = 1
+    title = 'Task 1',
+    description = 'Hacer tareas.',
+    due_date = '2023-10-01 15:32:21'
+WHERE task_id = '';
+
+-- UPDATE TASK STATUS
+UPDATE tasks
+SET
+    status_id = 1
+WHERE task_id = '';
+
+-- DELETE TASK
+DELETE FROM tasks WHERE task_id = '';
